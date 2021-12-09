@@ -484,3 +484,23 @@ MODAL AGREGAR CLIENTE
   </div>
 
 </div>
+
+<script>
+	
+  try{
+    onScan.attachTo(document, {
+      suffixKeyCodes: [13],
+      reactToPaste: true,
+      onScan: function(barcode) {
+        console.log("Codigo recibido: " + barcode)
+      },
+      onScanError: function(e){
+        console.log(e)
+      }
+    })
+    console.log('Scanner ready!')
+  }catch(e){
+    console.log('Error de lectura: ', e)
+  }
+
+</script>

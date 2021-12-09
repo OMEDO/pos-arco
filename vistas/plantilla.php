@@ -53,7 +53,9 @@ session_start();
   <script src="vistas/bower_components/datatables.net-bs/js/dataTables.responsive.min.js"></script>
   <script src="vistas/bower_components/datatables.net-bs/js/responsive.bootstrap.min.js"></script> 
   
-
+  <!-- Scan -->
+  <script src="node_modules/onscan.js/onscan.js"></script>
+  
   <!-- SweetAlert -->
   <script src="vistas/plugins/sweetalert2/sweetalert2.all.js"></script>
    <!-- By default SweetAlert2 doesn't support IE. To enable IE 11 support, include Promise polyfill:-->
